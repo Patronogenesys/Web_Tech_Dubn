@@ -73,6 +73,29 @@ body {
     margin: 10px;
 }
 
+.big_para {
+    padding: 15px 120px;
+    color: #ffffff;
+    border-radius: 70px 130px;
+    background-color: #000000;
+    transition: width 500ms ease-out, margin 500ms ease-out;
+}
+
+.big_para_h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.transparent_anim {
+    color: #ffffff88;
+    transition: color 200ms linear;
+}
+
+.transparent_anim:hover {
+    color: rgba(230, 158, 75, 0.705);
+    transition: color 200ms linear;
+}
+
 .layout {
     font-size: xx-large;
     font-weight: 100;
@@ -101,8 +124,15 @@ a:hover {
 }
 
 .separator {
-    background: rgba(255, 70, 70, 0.562);
-    border-radius: 15px;
+    background: rgb(255, 106, 61);
+    border-color: rgb(230, 157, 75);
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25px;
     width: 30px;
     height: 30px;
+}
+
+.accent_text {
+    color: rgb(255, 106, 61);
 }
