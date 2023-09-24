@@ -20,6 +20,7 @@
 } */
 #box {
     border: 1px solid;
+    background: #B482E0;
 }
 
 header {
@@ -41,31 +42,28 @@ header h1 {
 }
 
 main {
-    padding: 6px 0;
-    background: #B482E0;
-}
-
-.zodiac_info {
     border-radius: 10px;
     background-color: #ddd6fd;
     margin: 10px;
     padding: 10px;
 }
 
-.zodiac_info header {
-    font-weight: bold;
-    font-size: 25px;
-    text-align: center;
+.zodiac_card {
+    margin: 10px 5px;
+    border-top: #B482E0 dashed;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.date {
-    font-size: 18px;
-    color: gray;
+
+.zodiac_card .forecast {
+    font-size: 20px;
 }
 
-.description {
-    font-size: 18px;
-    text-align: justify;
+.zodiac_card .sign {
+    padding: 20px;
+    max-height: 90px;
 }
 
 nav {
