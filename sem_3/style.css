@@ -3,13 +3,43 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.box {
+    margin-left: 18.75%;
+    margin-right: 25%;
+}
+
+section {
+    border: black solid;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    padding-right: 48px;
+    font-size: 48px;
+    text-align: right;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 24px;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* #region Header*/
+
 header {
     width: 100%;
-    background: #72bce7;
+    background-image: url("images/header_bg.png");
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -21,16 +51,11 @@ nav {
     justify-content: space-between;
 }
 
-.box {
-    width: 80%;
-    margin: 0 auto;
-    /* background: gold; */
-}
 
 .nav_links {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 80%;
 }
 
@@ -48,6 +73,10 @@ nav a:hover {
     border-bottom: #00B2A0 1px;
 }
 
+nav .right_nav_link {
+    margin-right: 130px;
+}
+
 .header_company_name h1 {
     font-size: 200px;
     text-align: center;
@@ -58,19 +87,17 @@ nav a:hover {
     font-size: 24px;
 }
 
-.about {
-    width: 100%;
-    padding: 100px 0;
-    min-height: 100vh;
+header .boat_ico {
+    margin: 80px auto;
+    width: 20px;
+    height: 68.81px;
 }
 
-.about h2 {
-    font-size: 48px;
-    text-align: center;
-}
+/* #endregion */
 
+/* #region About*/
 
-.about_text{
+.about_text {
     margin-top: 40px;
     display: flex;
     flex-direction: row;
@@ -82,4 +109,98 @@ nav a:hover {
     font-size: 14px;
     width: 45%;
     padding: 20px 0;
+}
+
+/* #endregion */
+
+.gains .box {
+    margin: 0 18.75%;
+}
+
+.gains h2 {
+    padding: 0;
+    text-align: center;
+}
+
+.gains .features {
+    margin-top: 14%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.feature{
+    width: 30%;
+}
+.feature .heading {
+    height: 56px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature .heading h3 {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.gains .statistics {
+    height: 160px;
+    margin-top: 14%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gains .statistics .text {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gains .statistics .chart {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.gains .statistics .chart span{
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .header_company_name h1 {
+        font-size: 100px;
+    }
+
+    .box {
+        width: 95%;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 420px) {
+    .header_company_name h1 {
+        font-size: 50px;
+    }
+
+    .nav_links {
+        flex-direction: column;
+    }
+
+    .about_text p {
+        width: 100%;
+    }
+
+    .about .box h2 {
+        font-size: 30px;
+    }
 }
