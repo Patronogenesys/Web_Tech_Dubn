@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+.form {
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: lightblue;
+}
+
+p {
+    margin: 10px;
+}
+
+input{
+    padding: 10px;
+}
+
+input[type=text] {
+    background: paleturquoise;
+}
+
+input[type=password] {
+    background: floralwhite;
+}
+
+.input_button {
+    background-color: plum;
+}
+
+input:focus{
+    outline: none;
+    border-left: solid 2px rgb(255, 155, 155);
+}
