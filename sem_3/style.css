@@ -210,7 +210,6 @@ header .boat_ico {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: ;
     flex-wrap: wrap;
 }
 
