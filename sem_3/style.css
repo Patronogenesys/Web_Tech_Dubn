@@ -8,14 +8,14 @@
     margin-left: 18.75%;
     margin-right: 25%;
 }
+
 .box {
     margin: 0 18.75%;
 }
 
 section {
-
     width: 100%;
-    min-height: 100vh;
+    padding: 150px 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -41,6 +41,9 @@ p {
 header {
     width: 100%;
     background-image: url("images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -61,7 +64,9 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
+    flex-wrap: wrap;
 }
+
 
 nav img {
     max-height: 50px;
@@ -71,6 +76,8 @@ nav a {
     color: white;
     font-size: 24px;
     text-decoration: none;
+    text-wrap: nowrap;
+    margin: 10px;
 }
 
 nav a:hover {
@@ -117,9 +124,10 @@ header .boat_ico {
 /* #endregion */
 
 /* #region Gains*/
-.gains{
+.gains {
     background-color: #F8F8F8;
 }
+
 .gains h2 {
     padding: 0;
     text-align: center;
@@ -129,11 +137,16 @@ header .boat_ico {
     margin-top: 10%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.feature{
+
+.feature {
     width: 30%;
+    min-width: 330px;
+    margin: 20px;
 }
+
 .feature .heading {
     height: 56px;
     margin-bottom: 10px;
@@ -149,11 +162,11 @@ header .boat_ico {
 }
 
 .gains .statistics {
-    height: 160px;
     margin-top: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .gains .statistics .text {
@@ -164,100 +177,130 @@ header .boat_ico {
     justify-content: space-between;
 }
 
+.gains .statistics .text p {
+    margin: 10px;
+}
+
 .gains .statistics .chart {
     height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.gains .statistics .chart span{
+.gains .statistics .chart .row{
+    margin: 10px 0;
+}
+
+.gains .statistics .chart span {
     margin-left: 10px;
     font-size: 24px;
 }
+
 /* #endregion */
 
 /* #region Team*/
 
-.team h2{
+.team h2 {
     padding: 0;
     margin-bottom: 14%;
     text-align: center;
 }
 
-.team .mentors{
+.team .mentors {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: ;
+    flex-wrap: wrap;
 }
-.team .mentors img{
+
+.team .mentor {
+    margin: 20px;
+}
+
+.team .mentors img {
     margin-bottom: 25px;
 }
-.team p{
+
+.team p {
     text-align: center;
 }
-.team .accent_p{
+
+.team .accent_p {
     font-size: 18px;
     font-weight: 600;
 }
 
 /* #endregion */
 
-
 /* #region prices*/
-.prices{
+.prices {
     background-color: #f8f8f8;
 }
-.prices h2{
+
+.prices h2 {
     padding: 0;
     margin-bottom: 17%;
     text-align: center;
 }
-.prices h3{
+
+.prices h3 {
     padding: 0;
     margin-top: 7.8%;
     margin-bottom: 10%;
     text-align: center;
 }
-.prices .price_cards{
+
+.prices .price_cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: stretch;
+    flex-wrap: wrap;
 }
+
 .prices .card {
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 30%;
+    min-width: 300px;
+    margin: 10px;
 }
-.prices .card ul{
+
+.prices .card ul {
     min-height: 50%;
     margin: 0 8%;
 }
-.price_cards li{
+
+.price_cards li {
     list-style: none;
     margin: 10px;
     font-size: 14px;
 }
-.prices .price{
+
+.prices .price {
     margin: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.prices .price .num{
+
+.prices .price .num {
     margin: 8px;
     font-size: 36px;
     text-align: center;
 }
-.prices .dollar{
+
+.prices .dollar {
     font-size: 18px;
     line-height: 50%;
 }
+
 /* #endregion */
 
-footer{
+footer {
     height: 200px;
     background-color: #00B2A0;
     display: flex;
@@ -265,18 +308,63 @@ footer{
     justify-content: center;
 }
 
+@media screen and (max-width: 1700px) {
+    .nav_links {
+        justify-content: center;
+    }
+    .nav_links a{
+        /* width: 30%; */
+        flex-basis: 30%;
+        font-size: 30px;
+    }
+    nav .right_nav_link{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .box_half{
+        margin: 0 18.75%;;
+    }
+
+    .gains .statistics {
+        justify-content: center;
+    }
+    .gains .statistics .text{
+        width: 400px;
+    }
+    .prices .card {
+        width: 60%;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .header_company_name h1 {
         font-size: 100px;
     }
-
-    .box {
-        width: 95%;
+    nav {
+        justify-content: center;
     }
-
+    .box, .box_half {
+        margin: 0 10%;
+    }
     .logo {
         display: none;
     }
+    .about h2{
+        text-align: center;
+    }
+    .about_text p {
+        width: 100%;
+    }
+    .prices .card {
+        width: 100%;
+    }
+    section{
+        padding: 60px 0;
+    }
+    
 }
 
 /* mobile */
@@ -284,13 +372,9 @@ footer{
     .header_company_name h1 {
         font-size: 50px;
     }
-
+    
     .nav_links {
         flex-direction: column;
-    }
-
-    .about_text p {
-        width: 100%;
     }
 
     .about .box h2 {
