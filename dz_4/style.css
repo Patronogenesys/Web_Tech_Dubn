@@ -102,5 +102,5 @@ input:focus {
 .buttons{
     display: flex;
     padding: 10px;
-    justify-content: flex-end;
+    justify-content: center;
 }

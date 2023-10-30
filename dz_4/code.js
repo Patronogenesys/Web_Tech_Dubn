@@ -4,20 +4,16 @@ function fun() {
     let url = document.querySelector("#url_field").value;
     let comm = document.querySelector("#comment_field").value;
 
-    if (user_name.length == 0 || url.length == 0 || comm.length == 0) 
+    if (user_name.value == "" || url.value == "" || comm.value == "") 
         return;
-
-    if (true) {
-        
-    }
 
     let t =
         `<div class="comment">
             <div class="user_info">
                 <img src="${url}" alt="">
-                <span>${user_name}</span>
+                <p>${user_name}</p>
             </div>
-            <p class="comment_text">${comm}</p>
+            <p class="comment">${comm}</p>
         </div>`;
 
     document.querySelector(".list_comments").innerHTML += t;

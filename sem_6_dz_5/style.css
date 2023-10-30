@@ -1,3 +1,65 @@
+.box {
+    display: flex;
+    margin: 0 auto;
+    padding: 50px;
+    width: 70%;
+    background-color: rgb(189, 255, 233);
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    width: 45%;
+    height: 500px;
+}
+
+#comment_field {
+    width: 100%;
+    resize: none;
+
+}
+
+label{
+    display: inline-block;
+    min-width: 100px;
+    /* text-align: right; */
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+input {
+    width: 100%;
+}
+
 #button {
     background-color: orange;
+}
+
+.list_comments {
+    width: 45%;
+    height: 600px;
+    background-color: aquamarine;
+}
+
+p{
+    display: flex;
+    justify-content: stretch;
+}
+
+.comment{
+    padding: 20px;
+    margin: 10px;
+    background: skyblue;
+}
+.comment img{
+    width: 60px;
+    margin: 10px;
+}
+.comment .user_info{
+    display: flex;
+    align-items: center;
+}
+
+.comment .comment_text{
+    overflow-wrap: anywhere;
 }

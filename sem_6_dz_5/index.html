@@ -8,12 +8,12 @@
 </head>
 <body>
     <div class="box">
-        <form action="">
-            <label>Name<input type="text"></label>
-            <label>Ava url<input type="text"></label>
-            <label>comm<input type="text"></label>
-            <button id="btn_add_comm"></button>
-        </form>
+        <div class="form">
+            <p><label>Name</label><input type="text" id="user_name"></p>
+            <p><label>Avatar</label><input type="text" id="url_field" placeholder="URL..."></p>
+            <p><label>Comment</label><textarea name="sa" id="comment_field" rows="15" maxlength="200"></textarea></p>
+            <p><button id="btn_add_comm" onclick="fun()">Post Comment</button></p>
+        </div>
         <div class="list_comments"></div>
     </div>
 </body>
