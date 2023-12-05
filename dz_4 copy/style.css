@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    font-family: Arial;
+}
+h1{
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: 100;
+}
+
+.form {
+    width: 500px;
+    margin: 30px auto;
+    padding: 0;
+    background-color: orange;
+}
+
+fieldset{
+    background-color: rgb(27, 27, 54);
+    color: rgb(194, 187, 117);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 0;
+}
+
+p {
+    margin: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 30%;
+    padding: 0 20px;
+    text-align: right;
+
+}
+
+span {
+    display: inline-block;
+    padding: 10px 5px;
+}
+
+select {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+}
+
+input {
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"]{
+    border-radius: 5px;
+    width: 55%;
+}
+
+select[name="Country"] {
+    width: 59.2%;
+}
+
+.input_button, input[type="reset"] {
+    margin: 0 5px;
+    padding: 0;
+    height: 30px;
+    width: 70px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+.input_button:hover, input[type="reset"]:hover {
+    cursor: pointer;
+}
+.input_button{
+    background-color: rgb(103, 206, 103);
+}
+input[type="reset"]{
+    background-color: rgb(230, 93, 93);
+}
+
+
+
+input:focus {
+    outline: none;
+    background-color: rgb(255, 243, 211);
+}
+
+.date_select{
+    width: 59.2%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.buttons{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.mistake {
+    outline: 3px red solid;
+}

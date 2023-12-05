@@ -7,9 +7,7 @@ function fun() {
     if (user_name.length == 0 || url.length == 0 || comm.length == 0) 
         return;
 
-    if (true) {
-        
-    }
+    comm = comm.replace("instagram", "***").replace("facebook", "***")
 
     let t =
         `<div class="comment">

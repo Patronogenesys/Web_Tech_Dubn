@@ -5,7 +5,6 @@
     width: 70%;
     background-color: rgb(189, 255, 233);
     justify-content: space-between;
-    align-items: center;
 }
 
 form {
@@ -37,7 +36,6 @@ input {
 
 .list_comments {
     width: 45%;
-    height: 600px;
     background-color: aquamarine;
 }
 
